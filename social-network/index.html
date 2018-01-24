@@ -1,0 +1,46 @@
+<html>
+<head>
+	<meta charset='utf-8'></meta>
+    <title>Tutorial 3: Twitter</title>
+	<link type="text/css" rel="stylesheet" href="jquery.qtip.min.css" />
+    <script src='cytoscape.js'></script>
+	<script src='main.js'></script>
+    <script src='jquery-2.2.4.js'></script>
+    <script src='jquery.qtip.min.js'></script>
+	<script src='cytoscape-qtip.js'></script>
+</head>
+<style>
+    #cy {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    },
+	  #userSelection {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 10%;
+        display: none;
+    },
+	 #layoutButton {
+        position: absolute;
+        top: 5%;
+        right: 2%;
+    },
+	 body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+</style>
+<body>
+    <div id="cy"></div>
+	 <div id='userSelection'>
+        <input type='text' id='twitterHandle' placeholder="Username" hidden=true>
+        <input type='button' id='submitButton' value='Start graph' hidden=true>
+    </div>
+	 <div id='layoutButton'>
+        <input type='button' id='concentricButton' value='Regulate layout'>
+    </div>
+</body>
+</html>
